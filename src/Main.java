@@ -1,5 +1,6 @@
 import java.awt.image.AreaAveragingScaleFilter;
 import java.sql.SQLInvalidAuthorizationSpecException;
+import java.time.LocalDate;
 import java.util.*;
 
 public class Main {
@@ -23,7 +24,7 @@ public class Main {
         articleList.add(new5);
         System.out.println(articleList);
 
-        //write a class "square"
+        //write a class "square" and compare a list of squares from their perimeter // asssignment 4
         Square newSquare1 = new Square(1,2);
         Square newSquare2 = new Square(3,2);
         Square newSquare3 = new Square(5,12);
@@ -33,6 +34,22 @@ public class Main {
         squareList.add(newSquare3);
         Collections.sort(squareList);
         System.out.println(squareList);
+
+        //Write a class: RedditPost
+        RedditPost newPost = new RedditPost(LocalDate.now(),"William",1,"Reddit Title");
+        newPost.upvotePost();
+        newPost.downvotePost();
+        System.out.println(newPost.getScore());
+        System.out.println(newPost.getAuthor());
+        System.out.println(newPost.getDate());
+        System.out.println(newPost.getTitle());
+        newPost.setAuthor("Hermit");
+        System.out.println(newPost.getAuthor());
+        newPost.setTitle("The Frog");
+        System.out.println(newPost.getTitle());
+
+        RedditFrontPage newFrontPage = new RedditFrontPage(ArrayList asd);
+
     }
 
 
