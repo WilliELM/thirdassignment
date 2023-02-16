@@ -1,18 +1,38 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.awt.image.AreaAveragingScaleFilter;
+import java.sql.SQLInvalidAuthorizationSpecException;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-    //generate random number // assignement 1
+        //generate random number // assignement 1
         randomGen();
-    System.out.println(randomGen());
-        System.out.println(cprNumber("3105009138"));
-    cprNummer(3105009138L);
-        System.out.println(cprNummer(2310702152L));
+        System.out.println(randomGen());
+        // check cpr nummer // assignment 2
+        System.out.println( finalCpr("3205008312"));
+        // make articles // assignemt 3
+        Article new1 = new Article("william", "williams book");
+        Article new2 = new Article("brian", "brians masterpiece");
+        Article new3 = new Article("nicklas", "nicklas coding notebook");
+        Article new4 = new Article("lasse", "dogs in their natural habitat");
+        Article new5 = new Article("hans", "hans' journal");
+        ArrayList <Article> articleList = new ArrayList<>();
+        articleList.add(new1);
+        articleList.add(new2);
+        articleList.add(new3);
+        articleList.add(new4);
+        articleList.add(new5);
+        System.out.println(articleList);
 
-
-
+        //write a class "square"
+        Square newSquare1 = new Square(1,2);
+        Square newSquare2 = new Square(3,2);
+        Square newSquare3 = new Square(5,12);
+        ArrayList <Square> squareList = new ArrayList<>();
+        squareList.add(newSquare1);
+        squareList.add(newSquare2);
+        squareList.add(newSquare3);
+        Collections.sort(squareList);
+        System.out.println(squareList);
     }
 
 
@@ -26,19 +46,18 @@ public class Main {
         return randomNumber;
     }
 
-
-    public static boolean cprNumber (String userInput) {
-        if (userInput.length() == 10){
-            System.out.println(userInput.charAt(0));
-             if (userInput.charAt(0) <= 3 && userInput.charAt(1) <= 1) {
-
-                 if (userInput.charAt(2) >= 1 && userInput.charAt(3) >= 2){
-                     return true;
-                }
-            }
-        }
-
+    public static boolean finalCpr(String userinput){
+        String twoFirst = userinput.substring(0,2);
+        String twoSecond = userinput.substring(2,4);
+        int twoFirstAsInt = Integer.parseInt(twoFirst);
+        int twoSecondAsInt = Integer.parseInt(twoSecond);
+        if (userinput.length() == 10){
+            if (twoFirstAsInt <= 31 && twoSecondAsInt <= 12){
+            return true;
+        }}
         return false;
+
+
     }
     //each number if int is 10 long
     //10 is 12345678910
@@ -68,7 +87,4 @@ public class Main {
         }
         return false;
     }
-// hvis første tal er 3 eller under gå videre           // hvis tredje tal er 1 eller under gå videre
-    // hvis næste tal er 1 return false                 // hvis fjerde tal er under 2 gå videre
-
 }
