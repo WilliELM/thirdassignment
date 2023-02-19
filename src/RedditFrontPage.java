@@ -1,14 +1,23 @@
 import java.util.ArrayList;
 
 public class RedditFrontPage {
-    ArrayList postRedditList = new ArrayList<>();
+    private static ArrayList<RedditPost> list;
 
-public RedditFrontPage(ArrayList postRedditList){
-    this.postRedditList = postRedditList;
+
+public RedditFrontPage(ArrayList<RedditPost> list){
+    RedditFrontPage.list = list;
+
 
 
 }
     public void deletePost (int indexOfPostToDelete){
-        postRedditList.remove(indexOfPostToDelete);
+        list.remove(indexOfPostToDelete);
+    }
+
+    @Override
+    public String toString() {
+        return "RedditFrontPage{" +
+                "list=" + list +
+                '}';
     }
 }

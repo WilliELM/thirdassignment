@@ -47,5 +47,14 @@ public class RedditPost {
         this.title = title;
     }
 
-
+    @Override
+    public String toString() {
+        return "RedditPost{" +
+                "date=" + date +
+                ", author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                ", score=" + score +
+                ", downvotes=" + downvotes +
+                '}';
+    }
 }

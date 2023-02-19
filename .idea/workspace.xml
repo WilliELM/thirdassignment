@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f06d62-0f64-42fd-996f-2001c9358f41" name="Changes" comment="2 new assignments done">
-      <change afterPath="$PROJECT_DIR$/src/RedditFrontPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RedditPost.java" afterDir="false" />
+    <list default="true" id="59f06d62-0f64-42fd-996f-2001c9358f41" name="Changes" comment="just missing last assignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RedditFrontPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RedditFrontPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,7 +54,9 @@
       <option name="presentableId" value="Default" />
       <updated>1676286728977</updated>
       <workItem from="1676286729926" duration="7341000" />
-      <workItem from="1676546937042" duration="5009000" />
+      <workItem from="1676546937042" duration="5042000" />
+      <workItem from="1676643850390" duration="907000" />
+      <workItem from="1676825555637" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1676321302888</created>
@@ -71,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676548750844</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="just missing last assignment">
+      <created>1676588359141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676588359141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +88,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="2 new assignments done" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 new assignments done" />
+    <MESSAGE value="just missing last assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="just missing last assignment" />
   </component>
 </project>

@@ -35,8 +35,10 @@ public class Main {
         Collections.sort(squareList);
         System.out.println(squareList);
 
-        //Write a class: RedditPost
+        //Write a class: RedditPost // assignment 5
         RedditPost newPost = new RedditPost(LocalDate.now(),"William",1,"Reddit Title");
+        RedditPost newPost1 = new RedditPost(LocalDate.now(),"123",1,"123 Title");
+
         newPost.upvotePost();
         newPost.downvotePost();
         System.out.println(newPost.getScore());
@@ -47,8 +49,15 @@ public class Main {
         System.out.println(newPost.getAuthor());
         newPost.setTitle("The Frog");
         System.out.println(newPost.getTitle());
+        ArrayList<RedditPost> redditPosts = new ArrayList<>();
+        redditPosts.add(newPost);
+        redditPosts.add(newPost1);
 
-        RedditFrontPage newFrontPage = new RedditFrontPage(ArrayList asd);
+        // reddit front page // assignment 6
+        RedditFrontPage newFrontPage = new RedditFrontPage(redditPosts);
+        newFrontPage.deletePost(1);
+        System.out.println(redditPosts);
+        System.out.println(newFrontPage);
 
     }
 
